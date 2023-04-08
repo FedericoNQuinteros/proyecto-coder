@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,20 +19,33 @@
 </head>
 
 <body>
-    <header id="inicio-index">
-        <div>
-            <h1 class="titulo-principal"><a class="a-titulo" href="./index.html">
-                    REVICAM</h1>
-            </a>
+    <header class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="../img/logo-revicam.jpeg" alt="" class="w-50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/asesoramiento.html">Asesoramiento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul class="caja-nav">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/servicios.html">Servicios</a></li>
-                <li><a href="../pages/asesoramiento.html">Asesoramiento</a></li>
-                <li><a href="../pages/contacto.html" target="_blank">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
     <hr class="hr">
     <main>
@@ -133,30 +147,30 @@
 
     </main>
 
-</body>
-<footer>
+    <footer class="container-fluid bg-verde mt-4">
+        <div class="container">
 
-    <ul>
-        <li>
-            <h5>Telefono:</h5>
-            <span>4693-1669</span>
-        </li>
-        <li>
-            <h5>WhatsApp:</h5>
-            <span>1155556666</span>
-        </li>
-        <li>
-            <h5>E-mail:</h5>
-            <span>revicamrto@gmail.com</span>
-        </li>
-    </ul>
+            <div class="row justify-content-lg-between align-items-lg-center">
+                <div class="col-12 p-3 col-lg-6">
 
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13113.505425941315!2d-58.4913889!3d-34.7461111!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcce46d5e62a7d%3A0x707f9d6f49f5877e!2sREVICAM%20-%20REVISION%20TECNICA%20NACIONAL!5e0!3m2!1ses-419!2sar!4v1678640644436!5m2!1ses-419!2sar"
-        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h5 class="text-center">Contactanos!</h5>
+                    <div class="fs-2 d-flex justify-content-around">
+                        <i class="bi bi-whatsapp"></i>
+                        <i class="bi bi-telephone"></i>
+                        <i class="bi bi-envelope-at"></i>
+                    </div>
+                </div>
 
-</footer>
+                <div class="col-12 p-3 col-lg-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13113.505425941315!2d-58.4913889!3d-34.7461111!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcce46d5e62a7d%3A0x707f9d6f49f5877e!2sREVICAM%20-%20REVISION%20TECNICA%20NACIONAL!5e0!3m2!1ses-419!2sar!4v1678640644436!5m2!1ses-419!2sar"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-
+</body>
 </html>

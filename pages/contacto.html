@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,92 +19,96 @@
 </head>
 
 <body>
-    <header id="inicio-index">
-        <div>
-            <h1 class="titulo-principal"><a class="a-titulo" href="./index.html">
-                    REVICAM</h1>
-            </a>
+    <header class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="../img/logo-revicam.jpeg" alt="" class="w-50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/asesoramiento.html">Asesoramiento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul class="caja-nav">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/servicios.html">Servicios</a></li>
-                <li><a href="../pages/asesoramiento.html">Asesoramiento</a></li>
-                <li><a href="../pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-            </ul>
-        </nav>
     </header>
     <hr class="hr">
     <main>
         <section>
             <article>
+                <h2 class="m-3">Contacto</h2>
+                <h3 class="m-3">Mandanos un mensaje!</h3>
 
-                <h2>Contacto</h2>
-                <h3>Mandanos un mensaje!</h3>
-                <form action="">
-
-                    <div>
-                        <label for="nombre-cliente">Nombre y Apellido:</label>
-                        <input type="text" name="" id="nombre-cliente">
+                <form>
+                    <div class="row">
+                        <div class="col-4 m-3">
+                            <div class="col-4 mb-3">
+                                <div class="form-group">
+                                    <label for="nombre" class="form-label">Nombre y Apellido:</label>
+                                    <input type="text" class="form-control" id="nombre">
+                                </div>
+                            </div>
+                            <div class="col-4 mb-3">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email:</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                            </div>
+                            <div class="col-4 mb-3">
+                                <div class="form-group">
+                                    <label for="mensaje" class="form-label">Mensaje:</label>
+                                    <textarea class="form-control" id="mensaje"></textarea>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="div-contacto">
-                        <label for="email-cliente">E-Mail:</label>
-                        <input type="email" name="" id="email-cliente">
-                    </div>
-                    <div class="div-contacto">
-                        <label for="asunto-mensaje">Selecciona el asunto:</label>
-                        <select name="" id="asunto-mensaje">
-                            <option value="tecnica">Técnica</option>
-                            <option value="ruta">Ruta</option>
-                            <option value="senasa">Senasa</option>
-                        </select>
-                    </div>
-                    <div class="div-contacto">
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
-                    </div>
-                    <div class="div-contacto">
-                        <span>Ya nos conoces?:</span>
-                        <label for="si">Sí</label>
-                        <input type="radio" id="si" name="radio-conoces" value="Si">
-
-                        <label for="no">No</label>
-                        <input type="radio" id="no" name="radio-conoces" value="No">
-                    </div>
-                    <div class="div-contacto">
-                        <input type="submit" value="Enviar" id="">
-                    </div>
-
-
+                    <button type="submit" class="btn boton m-3">Enviar</button>
                 </form>
-            </article>
-        </section>
     </main>
     <hr class="hr">
-    <footer>
+    <footer class="container-fluid bg-verde mt-4
+    ">
+        <div class="container">
 
-        <ul>
-            <li>
-                <h5>Telefono:</h5>
-                <span>4693-1669</span>
-            </li>
-            <li>
-                <h5>WhatsApp:</h5>
-                <span>1155556666</span>
-            </li>
-            <li>
-                <h5>E-mail:</h5>
-                <span>revicamrto@gmail.com</span>
-            </li>
-        </ul>
+            <div class="row justify-content-lg-between align-items-lg-center">
+                <div class="col-12 p-3 col-lg-6">
 
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13113.505425941315!2d-58.4913889!3d-34.7461111!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcce46d5e62a7d%3A0x707f9d6f49f5877e!2sREVICAM%20-%20REVISION%20TECNICA%20NACIONAL!5e0!3m2!1ses-419!2sar!4v1678640644436!5m2!1ses-419!2sar"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h5 class="text-center">Contactanos!</h5>
+                    <div class="fs-2 d-flex justify-content-around">
+                        <i class="bi bi-whatsapp"></i>
+                        <i class="bi bi-telephone"></i>
+                        <i class="bi bi-envelope-at"></i>
+                    </div>
+                </div>
 
+                <div class="col-12 p-3 col-lg-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13113.505425941315!2d-58.4913889!3d-34.7461111!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcce46d5e62a7d%3A0x707f9d6f49f5877e!2sREVICAM%20-%20REVISION%20TECNICA%20NACIONAL!5e0!3m2!1ses-419!2sar!4v1678640644436!5m2!1ses-419!2sar"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
 
 </body>
 
