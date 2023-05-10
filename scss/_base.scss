@@ -48,6 +48,7 @@ h3 {
 
 .nav-link {
     color: green;
+    font-size: 1.3em;
 }
 
 .boton {
@@ -56,9 +57,6 @@ h3 {
     color: white;
 }
 
-.bg-verde {
-    background-color: green;
-}
 
 iframe {
     max-width: 100%;
@@ -78,6 +76,3 @@ div{
     }
 }
 
-$color-primario: #e0466b;
-$color-secundario: #2c8973;
-$color-gris: #e6e6e6;

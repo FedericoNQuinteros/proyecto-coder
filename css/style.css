@@ -48,16 +48,13 @@ h3 {
 
 .nav-link {
   color: green;
+  font-size: 1.3em;
 }
 
 .boton {
   background-color: green;
   border: 2px solid;
   color: white;
-}
-
-.bg-verde {
-  background-color: green;
 }
 
 iframe {
@@ -85,6 +82,7 @@ div i {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1em;
   text-align: left;
+  padding: 1.2rem;
 }
 
 ul {
@@ -96,19 +94,24 @@ ul li {
 
 .bg-1 {
   background-color: #80ed99;
+  padding: 60px 10;
+  border: 1px solid red;
 }
 
-.bg-2 {
-  background-color: #cbf3f0;
-}
-
-article h2 {
+div h2 {
   color: green;
   font-size: 1.5em;
+  text-align: center;
 }
 
 article {
   margin: 1em;
+}
+
+div h3 {
+  color: green;
+  font-size: 1.7em;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
