@@ -1,6 +1,6 @@
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -70,9 +70,12 @@ iframe {
     background-size: cover;
 }
 
-div{
-    i{
-        padding-left: 10px ;
+div {
+    i {
+        padding-left: 10px;
     }
 }
 
+.bg-verde {
+    background-color: darkgreen;
+}
