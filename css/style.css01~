@@ -39,7 +39,6 @@ h3 {
 
 .h3-asesoramiento {
   font-size: 1.4em;
-  padding: 10px;
 }
 
 .h4-asesoramiento {
@@ -82,20 +81,6 @@ div i {
   list-style-type: none;
 }
 
-.iconos {
-  font-weight: bold;
-  color: red;
-  font-size: 24px;
-}
-
-.contactanos {
-  font-weight: bold;
-}
-
-h5 {
-  font-weight: bold;
-}
-
 .boton {
   background-color: green;
   border: 2px solid;
@@ -128,8 +113,8 @@ div h2 {
   text-align: center;
 }
 
-section {
-  padding: 10px;
+article {
+  margin: 1em;
 }
 
 ul {
@@ -142,4 +127,4 @@ ol {
   list-style-position: inside;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css01~.map */
