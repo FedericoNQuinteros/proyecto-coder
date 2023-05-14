@@ -5,27 +5,27 @@
 }
 
 h1 {
-    color: green;
+    color: $color-titulos;
 }
 
 body {
-    background-color: #f8f7ff;
+    background-color: $color-de-fondo;
 }
 
 h3 {
-    color: green;
+    color: $color-titulos;
     font-size: 1.7em;
     text-align: center;
 }
 
 .span {
     font-size: 1.1em;
-    color: red;
+    color: $color-secundario;
 }
 
 .hr {
     border: none;
-    border-top: 1px solid red;
+    border-top: 1px solid $color-secundario;
     margin: 20px 0;
 }
 
@@ -34,7 +34,7 @@ h3 {
 }
 
 .a-titulo {
-    color: green;
+    color: $color-titulos;
 }
 
 .h3-asesoramiento {
@@ -43,18 +43,18 @@ h3 {
 }
 
 .h4-asesoramiento {
-    color: red;
+    color: $color-secundario;
     font-size: 1.2em;
     font-weight: bold;
 }
 
 .nav-link {
-    color: green;
+    color: $color-titulos;
     font-size: 1.3em;
 }
 
 .boton {
-    background-color: green;
+    background-color: $color-titulos;
     border: 2px solid;
     color: white;
 }

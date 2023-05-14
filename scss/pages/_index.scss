@@ -17,11 +17,11 @@ ul{
 .bg-1 {
     background-color: #80ed99;
     padding: 60px 10;
-    border: 1px solid red;
+    border: 1px solid $color-secundario;
 }
 
 div h2 {
-    color: green;
+    color: $color-titulos;
     font-size: 1.5em;
     text-align: center;
 }
